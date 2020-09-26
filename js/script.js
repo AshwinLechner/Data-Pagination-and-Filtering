@@ -3,18 +3,11 @@ Treehouse Techdegree:
 FSJS Project 2 - Data Pagination and Filtering
 */
 
-/*
-For assistance:
-   Check out the "Project Resources" section of the Instructions tab: https://teamtreehouse.com/projects/data-pagination-and-filtering#instructions
-   Reach out in your Slack community: https://treehouse-fsjs-102.slack.com/app_redirect?channel=unit-2
-*/
-
-/*
-Create the `showPage` function
-This function will create and insert/append the elements needed to display a "page" of nine students
-*/
+// Variable that contains the number of items shown on the page.
 
 const itemsPerPage = 8;
+
+// Function that shows all the student info of 9 students at a time.
 
 function displayPage(list, page) {
   const startOfIndex = page * itemsPerPage - itemsPerPage;
@@ -25,8 +18,11 @@ function displayPage(list, page) {
 
   for (let i = 0; i < list.length; i++) {
     let student = list[i];
+
+    // Condition that checks if i is bigger or equal to the start of the index and lesser then the end of the index.
+
     if (i >= startOfIndex && i <= endOfIndex) {
-      let studentBuild = `<li class="student-item cf">
+      let studentInfo = `<li class="student-item cf">
              <div class="student-details">
              <img class = "avatar"
              src = "${student.picture.large}" alt = "Profile Picture" >
@@ -37,21 +33,18 @@ function displayPage(list, page) {
           <span class = "date" > ${student.registered.date} </span>
           </div> 
          </li>`;
-
-      studentList.insertAdjacentHTML("beforeend", studentBuild);
+      studentList.insertAdjacentHTML("beforeend", studentInfo);
     }
   }
 }
 
-/*
-Create the `addPagination` function
-This function will create and insert/append the elements needed for the pagination buttons
-*/
-
+// Function  that makes buttons depending on the number of pages and also lets you get to that page
 function addPagination(list) {
   const buttonsNeded = list.length / itemsPerPage;
   const buttons = document.querySelector(".link-list");
   buttons.innerHTML = "";
+
+  // Makes the buttons depending on the number of pages
 
   for (let i = 1; i < buttonsNeded; i++) {
     let buttonMaker = `<li>
@@ -61,6 +54,8 @@ function addPagination(list) {
   }
   const setButtonActive = document.getElementsByTagName("button");
   const firstButton = buttons.firstElementChild.firstChild.nextSibling;
+
+  // Removes all the "active" classes and sets the class of the clicked button to "active" en displays that page.
 
   firstButton.classList.add("active");
   buttons.addEventListener("click", (e) => {
@@ -75,6 +70,6 @@ function addPagination(list) {
   });
 }
 
-// Call functions
+// Calls the functions
 displayPage(data, 1);
 addPagination(data);
