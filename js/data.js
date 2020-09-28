@@ -4,8 +4,7 @@ FSJS Project 2 - Data Pagination and Filtering
 */
 
 // Array of student objects
-const data = [
-  {
+const data = [{
     name: {
       title: "Miss",
       first: "Ethel",
@@ -259,6 +258,135 @@ const data = [
       medium: "https://randomuser.me/api/portraits/med/men/30.jpg",
       thumbnail: "https://randomuser.me/api/portraits/thumb/men/30.jpg",
     },
+  }, {
+    name: {
+      title: "Mr",
+      first: "Herman",
+      last: "Griffin",
+    },
+    email: "herman.griffin@example.com",
+    registered: {
+      date: "11-04-2009",
+      age: 11,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/16.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/16.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/16.jpg",
+    },
+  }, {
+    name: {
+      title: "Mr",
+      first: "Mario",
+      last: "Freeman",
+    },
+    email: "mario.freeman@example.com",
+    registered: {
+      date: "02-14-2012",
+      age: 8,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/30.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/30.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/30.jpg",
+    },
+  }, {
+    name: {
+      title: "Mr",
+      first: "Herman",
+      last: "Griffin",
+    },
+    email: "herman.griffin@example.com",
+    registered: {
+      date: "11-04-2009",
+      age: 11,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/16.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/16.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/16.jpg",
+    },
+  }, {
+    name: {
+      title: "Mr",
+      first: "Mario",
+      last: "Freeman",
+    },
+    email: "mario.freeman@example.com",
+    registered: {
+      date: "02-14-2012",
+      age: 8,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/30.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/30.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/30.jpg",
+    },
+  },
+  {
+    name: {
+      title: "Mr",
+      first: "Mario",
+      last: "Freeman",
+    },
+    email: "mario.freeman@example.com",
+    registered: {
+      date: "02-14-2012",
+      age: 8,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/30.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/30.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/30.jpg",
+    },
+  }, {
+    name: {
+      title: "Mr",
+      first: "Herman",
+      last: "Griffin",
+    },
+    email: "herman.griffin@example.com",
+    registered: {
+      date: "11-04-2009",
+      age: 11,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/16.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/16.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/16.jpg",
+    },
+  }, {
+    name: {
+      title: "Mr",
+      first: "Mario",
+      last: "Freeman",
+    },
+    email: "mario.freeman@example.com",
+    registered: {
+      date: "02-14-2012",
+      age: 8,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/30.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/30.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/30.jpg",
+    },
+  }, {
+    name: {
+      title: "Mr",
+      first: "Herman",
+      last: "Griffin",
+    },
+    email: "herman.griffin@example.com",
+    registered: {
+      date: "11-04-2009",
+      age: 11,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/men/16.jpg",
+      medium: "https://randomuser.me/api/portraits/med/men/16.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/men/16.jpg",
+    },
   },
   {
     name: {
@@ -396,6 +524,92 @@ const data = [
       thumbnail: "https://randomuser.me/api/portraits/thumb/men/95.jpg",
     },
   },
+  {
+    name: {
+      title: "Ms",
+      first: "Sue",
+      last: "Kim",
+    },
+    email: "sue.kim@example.com",
+    registered: {
+      date: "06-20-2011",
+      age: 9,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/women/62.jpg",
+      medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/women/62.jpg",
+    },
+  },
+  {
+    name: {
+      title: "Ms",
+      first: "Sue",
+      last: "Kim",
+    },
+    email: "sue.kim@example.com",
+    registered: {
+      date: "06-20-2011",
+      age: 9,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/women/62.jpg",
+      medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/women/62.jpg",
+    },
+  },
+  {
+    name: {
+      title: "Ms",
+      first: "Sue",
+      last: "Kim",
+    },
+    email: "sue.kim@example.com",
+    registered: {
+      date: "06-20-2011",
+      age: 9,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/women/62.jpg",
+      medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/women/62.jpg",
+    },
+  },
+  {
+    name: {
+      title: "Ms",
+      first: "Sue",
+      last: "Kim",
+    },
+    email: "sue.kim@example.com",
+    registered: {
+      date: "06-20-2011",
+      age: 9,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/women/62.jpg",
+      medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/women/62.jpg",
+    },
+  },
+  {
+    name: {
+      title: "Ms",
+      first: "Sue",
+      last: "Kim",
+    },
+    email: "sue.kim@example.com",
+    registered: {
+      date: "06-20-2011",
+      age: 9,
+    },
+    picture: {
+      large: "https://randomuser.me/api/portraits/women/62.jpg",
+      medium: "https://randomuser.me/api/portraits/med/women/62.jpg",
+      thumbnail: "https://randomuser.me/api/portraits/thumb/women/62.jpg",
+    },
+  },
+
   {
     name: {
       title: "Ms",

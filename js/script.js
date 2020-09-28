@@ -40,13 +40,13 @@ function displayPage(list, page) {
 
 // Function  that makes buttons depending on the number of pages and also lets you get to that page
 function addPagination(list) {
-  const buttonsNeded = list.length / itemsPerPage;
+  const buttonsNeeded = Math.ceil(list.length / itemsPerPage) + 1;
   const buttons = document.querySelector(".link-list");
   buttons.innerHTML = "";
-
+  console.log(buttonsNeeded);
   // Makes the buttons depending on the number of pages
 
-  for (let i = 1; i < buttonsNeded; i++) {
+  for (let i = 1; i < buttonsNeeded; i++) {
     let buttonMaker = `<li>
          <button type="button" >${i}</button>
        </li>`;
