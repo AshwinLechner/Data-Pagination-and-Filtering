@@ -5,7 +5,7 @@ FSJS Project 2 - Data Pagination and Filtering
 
 // Variable that contains the number of items shown on the page.
 
-const itemsPerPage = 8;
+const itemsPerPage = 9;
 
 // Function that shows all the student info of 9 students at a time.
 
@@ -21,7 +21,7 @@ function displayPage(list, page) {
 
     // Condition that checks if i is bigger or equal to the start of the index and lesser then the end of the index.
 
-    if (i >= startOfIndex && i <= endOfIndex) {
+    if (i >= startOfIndex && i < endOfIndex) {
       let studentInfo = `<li class="student-item cf">
              <div class="student-details">
              <img class = "avatar"
